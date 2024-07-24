@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p>
-        <div class="before">
-            <form action="get">
-                <label for="birth">Your date of birth :</label>
-                <input type="date" name="birth" id="birth">
-                <button> submit </button>
-            </form>
-        </div>
-        <div class="after">
-            <textarea name="" id=""> </textarea>
-        </div>
 
-    </p>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <form id="ageForm">
+            <label for="dob">Date of Birth:</label>
+            <div class="block">
+                <p class="title">Date</p>
+                <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required>
+            </div>
+            <div class="block">
+                <p class="title">Month</p>
+                <input type="text" name="month" id="month" placeholder="mm"  minlength="1" maxlength="2" required>
+            </div>
+            <div class="block">
+                <p class="title">Year</p>
+                <input type="text" name="year" id="year" placeholder="yyyy"  minlength="4" maxlength="4" required>
+            </div>
+            <div id="base">
+                <input type="button" name="submit" value="Submit"  onclick="calculateAge()"/>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

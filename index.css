@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #db0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.block {
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.title {
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #000000;
+    word-spacing: 2.7px;
+}
+
+.container {
+    background-color: #59ca4d;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    margin: auto;
+    min-height: 50px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    outline: auto;
+}
+
+input[type=text]:focus {
+    background: #fff;
+    border: 2px solid rgb(241, 100, 100);
+}
+
+input[type=button] {
+    padding: 14px 40px;
+    border: #000000;
+    border-radius: 6px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+input[type=button]:hover {
+    background-color: #ff7878;
+}
+
+#age {
+    display: block;
+    margin: 10px;
+    margin-top: 35px;
+    padding: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    font-family: Verdana;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: rgb(0, 0, 0);
+}
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+}
